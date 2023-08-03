@@ -1,0 +1,44 @@
+
+
+.main__container {
+    margin-top: 73px;
+    margin-left: 72px;
+}
+
+.user__info-container, .nodata-container{
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    color: #000;
+    font-family: 'Noto Sans';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-top: 15px;
+}
+
+button {
+    margin-top: 37px;
+
+    width: 14.5rem;
+    height: 3rem;
+
+    background-color: #13C98A;
+
+    border: none;
+    border-radius: 25px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: 'Noto Sans';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    cursor: pointer;
+}

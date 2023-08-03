@@ -1,0 +1,16 @@
+<div class="main__container">
+    <div *ngIf="!dataFilled" class="nodata-container">
+        <span>Form data:</span>
+        <span>Форма пока не заполнена.</span>
+        <button routerLink="form">Заполнить форму</button>
+    </div>
+    <div *ngIf="dataFilled" class="user__info-container">
+        <span>Form data: </span>
+        <div class="info__container">
+            <span>Фио: </span>
+            <span>E-mail: </span>
+            <span>Тема: </span>
+            <button routerLink="form/edit">Изменить</button>
+        </div>
+    </div>
+</div>
