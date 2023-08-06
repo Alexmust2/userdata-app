@@ -6,10 +6,11 @@
     </div>
     <div *ngIf="dataFilled" class="user__info-container">
         <span>Form data: </span>
-        <div class="info__container">
-            <span>Фио: </span>
-            <span>E-mail: </span>
-            <span>Тема: </span>
+        <div class="info__container" >
+            <span><strong>Фио: </strong>{{name}}</span>
+            <span><strong>E-mail:</strong> {{email}}</span>
+            <span><strong>Тема:</strong> {{theme}} </span>
+            <span><strong>Ваше сообщение:</strong> {{msg}} </span>
             <button routerLink="form/edit">Изменить</button>
         </div>
     </div>

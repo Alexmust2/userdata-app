@@ -1,2 +1,31 @@
-<p>form-edit-page works!</p>
-<a routerLink="">Test</a>
+<div class="main__container">
+    <form class="form__container">
+        <h1>Форма для тебя</h1>
+        <div class="filed-holder">
+            <input [(ngModel)]="userForm.name" type="text" name="name" id="name"  required/>
+            <label for="name">Представьтесь пожалуйста</label>
+        </div>
+        <div class="filed-holder">
+            <input type="email" [(ngModel)]="userForm.email" name="mail" required/>
+            <label for="mail">Введите ваш e-mail</label>
+        </div>
+        <div class="filed-holder">
+            <select required id="select" name="theme" [(ngModel)]="userForm.theme">
+                <option disabled selected style="color: #9B99AA;"></option>
+                <option value="1">Тема 1</option>
+                <option value="2">Тема 2</option>
+                <option value="3">Тема 3</option>
+                <option value="4">Тема 4</option>
+            </select>
+            <label for="select">Тема сообщения</label>
+        </div>
+        <div class="filed-holder__msg_input">
+            <input [(ngModel)]="userForm.msg" id="msg" type="text" name="msg" class="msg_input" required/>
+            <label for="msg">Введите сообщение</label>
+        </div>
+        <div class="btns__container">
+            <button class="reset__btn" (click)="onReset()"><b>Сбросить</b></button>
+            <button class="send__btn" (click)="onSave()"><b>Отправить</b></button>
+        </div>
+    </form>
+</div> 
